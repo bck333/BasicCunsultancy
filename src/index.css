@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.gradient-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, #2196f3, #00008b);
+  }
+
+  .gradient-bgi {
+    inset: 0;
+    background: linear-gradient(to bottom, #2196f3, #00008b);
+  }
+
+  .gradient-bgp {
+    position: absolute;
+    background: linear-gradient(to bottom, #2196f3, #00008b);
+  }
+
+  .gradient-bgnope {
+ 
+    background: linear-gradient(to bottom, #2196f3, #00008b);
+  }
