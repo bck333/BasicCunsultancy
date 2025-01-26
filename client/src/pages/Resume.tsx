@@ -289,7 +289,7 @@ export function Resume() {
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-6 p-6">
-                <div className="flex-1 px-[1%] overflow-auto ">
+                <div className="flex-1 pt-[5%] px-[1%] overflow-auto ">
                     <div className="space-y-6 bg-white p-8 rounded-lg shadow-lg">
                         {/* Personal Information Section */}
                         <section>
@@ -534,8 +534,8 @@ export function Resume() {
                 </div>
 
                 {/* Resume Preview */}
-                <div className="flex-1 px-[1%] p-6 bg-gray">
-                    <div className="flex mb-6 bg-white p-6 rounded-lg shadow-lg">
+                <div className="flex-1 py-[5%] px-[1%] p-6 bg-gray">
+                    <div className="flex mb-6 bg-white p-8 rounded-lg shadow-lg">
                         <button
                             onClick={exportToPDF}
                             className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"

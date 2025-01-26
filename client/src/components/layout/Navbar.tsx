@@ -15,7 +15,7 @@ export function Navbar() {
     { path: '/', label: 'Home', icon: Globe },
     { path: '/about', label: 'About', icon: GraduationCap },
     { 
-      path: '/basic', 
+      path: '/services', 
       label: 'Services',
       icon: Globe,
       subItems: [
