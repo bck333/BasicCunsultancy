@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Globe, GraduationCap, Phone } from 'lucide-react'
-import logo from '../../asset/basic.png'
-
+import basicImage from '../../asset/basic.png'
+ 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -55,7 +55,7 @@ export function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <motion.img
-                src={logo}
+                src={basicImage}
                 alt="Basic Consultants Logo"
                 className="h-12 w-auto"
                 whileHover={{ scale: 1.05 }}
