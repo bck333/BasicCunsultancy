@@ -5,9 +5,9 @@ import Button from "./components/Botton"
 import { Link } from 'react-router-dom'
 import { UniversityCard } from '../components/home/UniversityCard'
 import {
-  Search, Book, FileSignature,Instagram, Linkedin, Twitter,
+  Search, Book, FileSignature, Instagram, Linkedin, Twitter,
   LucideHome as HomeIcon, FileType, Plane as LucidePlane,
- Target, ClipboardCheck,
+  Target, ClipboardCheck,
   School, GraduationCap, Users, ArrowRight, Settings
 } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -123,7 +123,7 @@ const LandingPage: React.FC = () => {
     },
     {
       icon: Book,
-      title: "Course & Country Selection",
+      title: "Country Selection",
       description: "Find the perfect match for your goals with personalized recommendations for courses and destinations that fit your expectations and interests.",
       color: "from-green-50 to-emerald-50",
       link: "/course"
@@ -171,7 +171,7 @@ const LandingPage: React.FC = () => {
       link: "/travel"
     }
   ];
-  
+
 
 
   useEffect(() => {
@@ -261,33 +261,33 @@ const LandingPage: React.FC = () => {
           animate="visible"
           className="max-w-7xl mx-auto"
         >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service, index) => (
-          <motion.div
-            key={index}
-            variants={itemVariants}
-            whileHover={{ y: -8, transition: { duration: 0.3 } }}
-            className="group relative"
-          >
-            <Link to={service.link} className="block">
-              <div className={`h-full bg-gradient-to-br ${service.color} rounded-2xl p-8 shadow-sm 
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                className="group relative"
+              >
+                <Link to={service.link} className="block">
+                  <div className={`h-full bg-gradient-to-br ${service.color} rounded-2xl p-8 shadow-sm 
                 hover:shadow-xl transition-all duration-300 border border-gray-100`}>
-                <div className="flex items-center mb-4">
-                  <service.icon className="w-12 h-12 text-blue-600 mr-4" />
-                  <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
-                </div>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {service.description}
-                </p>
-                <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors">
-                  <span>Learn More</span>
-                  <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </Link>
-          </motion.div>
-        ))}
-      </div>
+                    <div className="flex items-center mb-4">
+                      <service.icon className="w-12 h-12 text-blue-600 mr-4" />
+                      <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
+                    </div>
+                    <p className="text-gray-600 mb-6 leading-relaxed">
+                      {service.description}
+                    </p>
+                    <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors">
+                      <span>Learn More</span>
+                      <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </section>
       <section className="py-16 bg-blue-900 text-white">
@@ -398,8 +398,8 @@ const LandingPage: React.FC = () => {
         </div>
       </section>
 
-      <StudentTestimonials/>
-      
+      <StudentTestimonials />
+
     </div>
   )
 }

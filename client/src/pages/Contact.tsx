@@ -70,8 +70,7 @@ export function Contact() {
             Contact Us
           </h1>
           <p className="text-xl md:text-2xl mx-auto opacity-90">
-            We are waiting for you on our office in Hyderabad and Portugal, contact us via the contact form below your idea. We are here to answer any question.
-          </p>
+          We’d love to hear from you! Visit us at our offices in India or Portugal, or reach out using the contact form below. We’re here to answer any questions and assist in bringing your ideas to life.          </p>
         </motion.div>
       </section>
       <div className="container mx-auto p-4">

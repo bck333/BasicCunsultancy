@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { 
-  BookOpen, Search, Book, FileSignature, LifeBuoy, 
-  LucideHome as HomeIcon, FileType, Plane as LucidePlane, 
+import {
+  BookOpen, Search, Book, FileSignature, LifeBuoy,
+  LucideHome as HomeIcon, FileType, Plane as LucidePlane,
   DollarSign as CurrencyIcon, Target, ClipboardCheck,
-  School, GraduationCap, Users, Globe, ArrowRight 
+  School, GraduationCap, Users, Globe, ArrowRight
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -12,55 +12,64 @@ const services = [
     icon: GraduationCap,
     title: "Profile Evaluation",
     description: "Unlock your true potential with a comprehensive profile assessment, tailored to recommend top-tier universities based on your GPA, test scores, and unique talents.",
-    color: "from-blue-50 to-indigo-50"
+    color: "from-blue-50 to-indigo-50",
+    link: "/profile"
   },
   {
     icon: Target,
     title: "Career Counseling",
     description: "Discover your dream career with expert guidance, helping you navigate paths that align seamlessly with your aspirations and ambitions.",
-    color: "from-purple-50 to-pink-50"
+    color: "from-purple-50 to-pink-50",
+    link: "/career"
   },
   {
     icon: Book,
-    title: "Course & Country Selection",
+    title: "Country Selection",
     description: "Find the perfect match for your goals with personalized recommendations for courses and destinations that fit your expectations and interests.",
-    color: "from-green-50 to-emerald-50"
+    color: "from-green-50 to-emerald-50",
+    link: "/course"
   },
   {
     icon: School,
     title: "University Selection",
     description: "Gain access to prestigious universities through verified partnerships, ensuring transparent processes and cost-effective solutions.",
-    color: "from-orange-50 to-amber-50"
+    color: "from-orange-50 to-amber-50",
+    link: "/university"
   },
   {
     icon: ClipboardCheck,
     title: "Application Assistance",
     description: "Simplify your journey with expert support for applications, interviews, and documentation, ensuring every step is smooth and stress-free.",
-    color: "from-teal-50 to-cyan-50"
+    color: "from-teal-50 to-cyan-50",
+    link: "/application"
   },
   {
     icon: FileType,
     title: "Admission & Scholarship Support",
     description: "Transform dreams into reality with strategic assistance in securing admissions and scholarships, helping you overcome financial barriers.",
-    color: "from-rose-50 to-red-50"
+    color: "from-rose-50 to-red-50",
+    link: "/admission"
   },
   {
     icon: FileSignature,
     title: "Visa Assistance",
     description: "Navigate the complexities of visa applications with confidence through step-by-step expert guidance for your chosen destination.",
-    color: "from-blue-50 to-sky-50"
+    color: "from-blue-50 to-sky-50",
+    link: "/visa"
   },
   {
     icon: HomeIcon,
     title: "Accommodation Assistance",
     description: "Feel at home with personalized help in finding safe, affordable housing and connecting with supportive local communities.",
-    color: "from-violet-50 to-purple-50"
+    color: "from-violet-50 to-purple-50",
+    link: "/accommodation"
   },
   {
     icon: LucidePlane,
     title: "Travel & Pre-Departure Support",
     description: "Prepare for your journey with organized travel plans and detailed pre-departure briefings to ensure a seamless transition abroad.",
-    color: "from-emerald-50 to-green-50"
+    color: "from-emerald-50 to-green-50",
+    link: "/travel"
   }
 ];
 
@@ -119,9 +128,9 @@ export function Services() {
                 whileHover={{ y: -8, transition: { duration: 0.3 } }}
                 className="group relative"
               >
-                <Link to="/basic" className="block">
+                <Link to={service.link} className="block">
                   <div className={`h-full bg-gradient-to-br ${service.color} rounded-2xl p-8 shadow-sm 
-                    hover:shadow-xl transition-all duration-300 border border-gray-100`}>
+                     hover:shadow-xl transition-all duration-300 border border-gray-100`}>
                     <div className="flex items-center mb-4">
                       <service.icon className="w-12 h-12 text-blue-600 mr-4" />
                       <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
@@ -142,7 +151,7 @@ export function Services() {
       </section>
 
       {/* CTA Section */}
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -155,17 +164,21 @@ export function Services() {
           <p className="text-xl text-gray-600 mb-8">
             Get in touch with our experts and take the first step towards your international education goals.
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold 
-              hover:bg-blue-700 transition-colors duration-300 shadow-lg"
+          <Link
+            to='/contact'
           >
-            Contact Us Today
-          </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold 
+              hover:bg-blue-700 transition-colors duration-300 shadow-lg"
+            >
+              Contact Us Today
+            </motion.button>
+          </Link>
         </div>
-      </motion.section>
-    </div>
+      </motion.section >
+    </div >
   );
 }
 

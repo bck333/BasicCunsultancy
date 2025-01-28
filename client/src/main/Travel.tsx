@@ -1,5 +1,6 @@
 import React from 'react'
 import { Briefcase, Globe, Map, Users } from 'lucide-react'
+import { motion } from 'framer-motion';
 
 const Travel: React.FC = () => {
   const handleGoBack = () => {
@@ -36,7 +37,21 @@ const Travel: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header Section */}
-      <div className="relative bg-gradient-to-r from-teal-600 to-cyan-600 p-12 md:p-8">
+      <section className="relative py-20 gradient-bgnope text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="max-w-7xl mx-auto px-6 text-left relative z-10"
+          onClick={handleGoBack}
+        >
+        <h1 className="text-3xl md:text-4xl font-bold text-white mt-6">Travel & Pre-Departure Support</h1>
+        <p className="text-white mt-2 text-lg">
+          Start your journey abroad with confidence through our comprehensive travel and preparation services.
+        </p>
+        </motion.div>
+      </section>
+      {/* <div className="relative bg-gradient-to-r from-teal-600 to-cyan-600 p-12 md:p-8">
         <button
           className="absolute left-4 top-4 text-white hover:bg-white/20 p-2 rounded-full transition-colors"
           onClick={handleGoBack}
@@ -47,7 +62,7 @@ const Travel: React.FC = () => {
         <p className="text-white mt-2 text-lg">
           Start your journey abroad with confidence through our comprehensive travel and preparation services.
         </p>
-      </div>
+      </div> */}
 
       {/* Content Section */}
       <div className="p-6 md:p-8 max-w-6xl mx-auto">

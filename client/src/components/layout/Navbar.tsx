@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Globe, GraduationCap, Phone } from 'lucide-react'
-import logo from '../../asset/B.png'
+import logo from '../../asset/basic.png'
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,7 +15,7 @@ export function Navbar() {
     { path: '/', label: 'Home', icon: Globe },
     { path: '/about', label: 'About', icon: GraduationCap },
     { 
-      path: '/services', 
+      path: '/basic', 
       label: 'Services',
       icon: Globe,
       subItems: [

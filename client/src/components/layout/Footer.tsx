@@ -114,14 +114,14 @@ export function Footer() {
             <p className="text-gray-400">
               &copy; {new Date().getFullYear()} Basic Consultants. All rights reserved.
             </p>
-            <div className="flex space-x-6 text-sm text-gray-400">
+            {/* <div className="flex space-x-6 text-sm text-gray-400">
               <a href="/privacy" className="hover:text-white transition-colors duration-200">
                 Privacy Policy
               </a>
               <a href="/terms" className="hover:text-white transition-colors duration-200">
                 Terms of Service
               </a>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </div>

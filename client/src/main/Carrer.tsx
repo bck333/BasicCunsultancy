@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowLeft, Compass, Target, Lightbulb } from 'lucide-react'
+import { motion } from 'framer-motion';
 
 const Career: React.FC = () => {
   const handleGoBack = () => {
@@ -9,7 +10,21 @@ const Career: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header Section */}
-      <div className="relative bg-gradient-to-r from-green-500 to-teal-600 p-12 md:p-8">
+      <section className="relative py-20 gradient-bgnope text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="max-w-7xl mx-auto px-6 text-left relative z-10"
+          onClick={handleGoBack}
+        >
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">Profile Evaluation</h1>
+          {/* <p className="text-xl md:text-2xl mx-auto opacity-90">
+            Comprehensive support for your international education journey, from profile evaluation to pre-departure assistance.
+          </p> */}
+        </motion.div>
+      </section>
+      {/* <div className="relative bg-gradient-to-r from-green-500 to-teal-600 p-12 md:p-8">
         <button
           className="absolute left-4 top-4 text-white hover:bg-white/20 p-2 rounded-full transition-colors"
           onClick={handleGoBack}
@@ -18,7 +33,7 @@ const Career: React.FC = () => {
          
         </button>
         <h1 className="text-3xl md:text-4xl font-bold text-white mt-6">Career Counseling</h1>
-      </div>
+      </div> */}
       
       {/* Content Section */}
       <div className="p-6 md:p-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
