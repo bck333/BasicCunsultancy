@@ -34,7 +34,7 @@ const services = [
     title: "University Selection",
     description: "Gain access to prestigious universities through verified partnerships, ensuring transparent processes and cost-effective solutions.",
     color: "from-orange-50 to-amber-50",
-    link: "/university"
+    link: "/universities"
   },
   {
     icon: ClipboardCheck,
