@@ -216,6 +216,188 @@ const universities = [
     "location": "Sydney, Nova Scotia, Canada",
     "image": "https://example.com/capebreton.jpg"
   },
+  {
+    "name": "EU Business School",
+    "location": "Geneva, Montreux, Switzerland",
+    "image": "https://example.com/eu_business_school.jpg"
+  },
+  {
+    "name": "Business & Hotel Management School (BHMS) University Centre, Switzerland",
+    "location": "Lucerne, Switzerland",
+    "image": "https://example.com/bhms_university_centre.jpg"
+  },
+  {
+    "name": "Rushford Business School",
+    "location": "Lucerne, Switzerland",
+    "image": "https://example.com/rushford_business_school.jpg"
+  },
+  {
+    "name": "Swiss Hotel Management School (SHMS)",
+    "location": "Montreux, Leysin, Switzerland",
+    "image": "https://example.com/shms.jpg"
+  },
+  {
+    "name": "César Ritz Colleges",
+    "location": "Le Bouveret, Brig, Switzerland",
+    "image": "https://example.com/cesar_ritz_colleges.jpg"
+  },
+  {
+    "name": "HIM Business School",
+    "location": "Montreux, Switzerland",
+    "image": "https://example.com/him_business_school.jpg"
+  },
+  {
+    "name": "Culinary Arts Academy",
+    "location": "Le Bouveret, Switzerland",
+    "image": "https://example.com/culinary_arts_academy.jpg"
+  },
+  {
+    "name": "Le Cordon Bleu",
+    "location": "Paris, France",
+    "image": "https://example.com/le_cordon_bleu.jpg"
+  },
+  {
+    "name": "Toulouse Business School",
+    "location": "Toulouse, Paris, France",
+    "image": "https://example.com/toulouse_business_school.jpg"
+  },
+  {
+    "name": "New York Film Academy",
+    "location": "Paris, France",
+    "image": "https://example.com/new_york_film_academy.jpg"
+  },
+  {
+    "name": "Institut Superieur de Gestion (ISG)",
+    "location": "Paris, France",
+    "image": "https://example.com/isg.jpg"
+  },
+  {
+    "name": "Association Leonard De Vinci (ESILV Engineering School & EMLV Management School)",
+    "location": "Paris, France",
+    "image": "https://example.com/association_leonard_de_vinci.jpg"
+  },
+  {
+    "name": "Istituto Marangoni",
+    "location": "Paris, France",
+    "image": "https://example.com/istituto_marangoni.jpg"
+  },
+  {
+    "name": "University of Europe for Applied Sciences",
+    "location": "Paris, France",
+    "image": "https://example.com/university_of_europe_for_applied_sciences.jpg"
+  },
+  {
+    "name": "ESC Clermont",
+    "location": "Clermont-Ferrand, France",
+    "image": "https://example.com/esc_clermont.jpg"
+  },
+  {
+    "name": "TIO University of Applied Sciences (TIO Business School)",
+    "location": "Utrecht, Netherlands",
+    "image": "https://example.com/tio_university.jpg"
+  },
+  {
+    "name": "Wittenborg University of Applied Sciences",
+    "location": "Apeldoorn, Netherlands",
+    "image": "https://example.com/wittenborg_university.jpg"
+  },
+  {
+    "name": "SRH Haarlem University of Applied Sciences (Formerly Haarlem Campus, Institute for Higher Education)",
+    "location": "Haarlem, Netherlands",
+    "image": "https://example.com/srh_haarlem_university.jpg"
+  },
+  {
+    "name": "IC University of Applied Sciences - Amsterdam (Through GUS)",
+    "location": "Amsterdam, Netherlands",
+    "image": "https://example.com/ic_university_amsterdam.jpg"
+  },
+  {
+    "name": "EIT InnoEnergy",
+    "location": "All Locations",
+    "image": "https://example.com/eit_innoenergy.jpg"
+  },
+  {
+    "name": "Cambridge Education Group - CEG - OnCampus Amsterdam",
+    "location": "Amsterdam, Netherlands",
+    "image": "https://example.com/ceg_oncampus_amsterdam.jpg"
+  },
+  {
+    "name": "Steinbeis University - Schools of Next Practices",
+    "location": "Stuttgart, Germany",
+    "image": "https://example.com/steinbeis_university.jpg"
+  },
+  {
+    "name": "Arden University",
+    "location": "Berlin, Germany",
+    "image": "https://example.com/arden_university.jpg"
+  },
+  {
+    "name": "European University / EU Business School",
+    "location": "Munich, Germany",
+    "image": "https://example.com/eu_business_school_munich.jpg"
+  },
+  {
+    "name": "IU International University of Applied Sciences (Formerly IUBH, Internationale Hochschule Bad Honnef)",
+    "location": "Bad Honnef, Germany",
+    "image": "https://example.com/iu_international_university.jpg"
+  },
+  {
+    "name": "POLIMI Graduate School of Management (Also Known as MIP Politecnico di Milano)",
+    "location": "Milan, Italy",
+    "image": "https://example.com/polimi_graduate_school.jpg"
+  },
+  {
+    "name": "International Education Partners (IEP Italy)",
+    "location": "All across Italy",
+    "image": "https://example.com/iep_italy.jpg"
+  },
+  {
+    "name": "New York Film Academy",
+    "location": "Florence, Italy",
+    "image": "https://example.com/new_york_film_academy_florence.jpg"
+  },
+  {
+    "name": "Istituto Superiore di Design, Napoli",
+    "location": "Napoli, Italy",
+    "image": "https://example.com/istituto_superiore_di_design_napoli.jpg"
+  },
+  {
+    "name": "Maynooth University",
+    "location": "Maynooth, Ireland",
+    "image": "https://example.com/maynooth_university.jpg"
+  },
+  {
+    "name": "University of Limerick",
+    "location": "Limerick, Ireland",
+    "image": "https://example.com/university_of_limerick.jpg"
+  },
+  {
+    "name": "University of Galway",
+    "previous_name": "National University of Ireland, Galway (NUI Galway)",
+    "location": "Galway, Ireland",
+    "image": "https://example.com/university_of_galway.jpg"
+  },
+  {
+    "name": "Shannon College of Hotel Management",
+    "location": "Co. Clare, Ireland",
+    "image": "https://example.com/shannon_college.jpg"
+  },
+  {
+    "name": "National College of Ireland",
+    "location": "Dublin, Ireland",
+    "image": "https://example.com/national_college_of_ireland.jpg"
+  },
+  {
+    "name": "Dublin Business School (DBS)",
+    "location": "Dublin, Ireland",
+    "note": "No commission for applications from Punjab, Haryana, Gujarat, Andhra Pradesh, Telangana, and Rajasthan (W.e.f. November 2023)",
+    "image": "https://example.com/dublin_business_school.jpg"
+  },
+  {
+    "name": "Dublin City University",
+    "location": "Dublin, Ireland",
+    "image": "https://example.com/dublin_city_university.jpg"
+  }
 ];
 
 export function Universities() {
