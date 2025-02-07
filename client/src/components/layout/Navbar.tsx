@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Globe, GraduationCap, Phone } from 'lucide-react'
-import Basic from '../../asset/basic.png'
- 
+import Basic from "../../assets/Basic.png";
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)

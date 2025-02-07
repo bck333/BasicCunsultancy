@@ -11,6 +11,9 @@ import {
   School, GraduationCap, Users, ArrowRight, Settings
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import rohit from "../assets/rohit.png";
+import bhavani from "../assets/b.png";
+
 import StudentTestimonials from './StudentTestimonials'
 
 const LandingPage: React.FC = () => {
@@ -65,40 +68,40 @@ const LandingPage: React.FC = () => {
   const reviews = [
     {
       id: 1,
-      name: "Emily Johnson",
-      message: "Amazing support throughout my study abroad journey to the UK! The consultants made everything so smooth and stress-free.",
-      location: "Studied in London, UK",
+      name: "Rohit Kancha",
+      message: "We had a great experience communicating with Vinod at Basic Consultancy. He helped my brother with his UK visa for master's studies, offering clear advice and handling everything efficiently. The process was smooth, and my brother received his visa without any issues. Highly recommend Vinod for visa assistance",
+      location: "Hyderabad,Telengana, India.",
       socialLinks: {
-        instagram: "https://instagram.com/emily_travels",
-        linkedin: "https://linkedin.com/in/emilyjohnson",
-        twitter: "https://twitter.com/emily_abroad"
+        // instagram: "https://instagram.com/emily_travels",
+        // linkedin: "https://linkedin.com/in/emilyjohnson",
+        // twitter: "https://twitter.com/emily_abroad"
       },
-      image: "/api/placeholder/200/200" // Placeholder for student image
+      image: rohit // Placeholder for student image
     },
     {
       id: 2,
-      name: "Michael Chen",
-      message: "Helped me navigate the complex application process for studying in Canada. Couldn't have done it without their expertise!",
-      location: "Studied in Toronto, Canada",
+      name: "Bhavani Pareddy",
+      message: "Basic Consultancy helped me a lot in my journey to study for a master’s degree abroad. They guided me through every step, from choosing the right university to completing my application and visa process. Vinod Anna gave me the best support with his helpful advice and friendly approach. He made everything easy and clear, which gave me confidence and peace of mind. I am very thankful to Basic Consultancy and Vinod for their support, and I recommend them to anyone who wants to study abroad.",
+      location: "Telengana, India.",
       socialLinks: {
-        instagram: "https://instagram.com/michael_explorer",
-        linkedin: "https://linkedin.com/in/michaelchen",
-        twitter: "https://twitter.com/michael_global"
+        // instagram: "https://instagram.com/michael_explorer",
+        // linkedin: "https://linkedin.com/in/michaelchen",
+        // twitter: "https://twitter.com/michael_global"
       },
-      image: "/api/placeholder/200/200"
+      image: bhavani
     },
-    {
-      id: 3,
-      name: "Sarah Martinez",
-      message: "Professional, caring, and incredibly knowledgeable. They found the perfect university program for my academic goals.",
-      location: "Studied in Sydney, Australia",
-      socialLinks: {
-        instagram: "https://instagram.com/sarah_worldwide",
-        linkedin: "https://linkedin.com/in/sarahmartinez",
-        twitter: "https://twitter.com/sarah_study_abroad"
-      },
-      image: "/api/placeholder/200/200"
-    }
+    // {
+    //   id: 3,
+    //   name: "Sarah Martinez",
+    //   message: "Professional, caring, and incredibly knowledgeable. They found the perfect university program for my academic goals.",
+    //   location: "Studied in Sydney, Australia",
+    //   socialLinks: {
+    //     // instagram: "https://instagram.com/sarah_worldwide",
+    //     // linkedin: "https://linkedin.com/in/sarahmartinez",
+    //     // twitter: "https://twitter.com/sarah_study_abroad"
+    //   },
+    //   image: "/api/placeholder/200/200"
+    // }
   ];
 
   // Filter universities based on the search term

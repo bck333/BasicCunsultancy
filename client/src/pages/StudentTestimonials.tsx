@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Instagram, Linkedin, Twitter } from 'lucide-react';
+import rohit from "../assets/rohit.png";
+import bhavani from "../assets/b.png";
 
 const StudentTestimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -7,28 +9,28 @@ const StudentTestimonials = () => {
   const reviews = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      location: "New York, NY",
-      message: "This program completely transformed my career trajectory. The skills I learned were immediately applicable.",
-      image: "/api/placeholder/200/200",
+      name: "Rohit Kancha",
+      message: "We had a great experience communicating with Vinod at Basic Consultancy. He helped my brother with his UK visa for master's studies, offering clear advice and handling everything efficiently. The process was smooth, and my brother received his visa without any issues. Highly recommend Vinod for visa assistance",
+      location: "Hyderabad,Telengana, India.",
       socialLinks: {
-        instagram: "#",
-        linkedin: "#",
-        twitter: "#"
-      }
+        // instagram: "https://instagram.com/emily_travels",
+        // linkedin: "https://linkedin.com/in/emilyjohnson",
+        // twitter: "https://twitter.com/emily_abroad"
+      },
+      image: rohit // Placeholder for student image
     },
     {
       id: 2,
-      name: "Michael Chen",
-      location: "San Francisco, CA",
-      message: "The mentorship and community support were invaluable. I couldn't have achieved my goals without this program.",
-      image: "/api/placeholder/200/200",
+      name: "Bhavani Pareddy",
+      message: "Basic Consultancy helped me a lot in my journey to study for a master’s degree abroad. They guided me through every step, from choosing the right university to completing my application and visa process. Vinod Anna gave me the best support with his helpful advice and friendly approach. He made everything easy and clear, which gave me confidence and peace of mind. I am very thankful to Basic Consultancy and Vinod for their support, and I recommend them to anyone who wants to study abroad.",
+      location: "Telengana, India.",
       socialLinks: {
-        instagram: "#",
-        linkedin: "#",
-        twitter: "#"
-      }
-    }
+        // instagram: "https://instagram.com/michael_explorer",
+        // linkedin: "https://linkedin.com/in/michaelchen",
+        // twitter: "https://twitter.com/michael_global"
+      },
+      image: bhavani
+    },
   ];
 
   const handlePrevious = () => {
@@ -73,7 +75,7 @@ const StudentTestimonials = () => {
                     {reviews[currentIndex].location}
                   </p>
                 </div>
-                <div className="flex space-x-4">
+                {/* <div className="flex space-x-4">
                   <a 
                     href={reviews[currentIndex].socialLinks.instagram} 
                     target="_blank" 
@@ -96,9 +98,9 @@ const StudentTestimonials = () => {
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:text-blue-600 transition"
                   >
-                    <Twitter size={20} className="md:w-6 md:h-6" />
+                    <Twitter size={20} className="md:w-6 md:h-6" /> 
                   </a>
-                </div>
+                </div>*/}
               </div>
             </div>
           </div>

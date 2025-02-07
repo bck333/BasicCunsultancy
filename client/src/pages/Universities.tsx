@@ -76,327 +76,386 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Search } from 'lucide-react';
-
+import  us1 from '../assets/UNITED STATES/Northwest Missouri State University - Maryville, Missouri.jpg';
+import  us2 from '../assets/UNITED STATES/Dallas Baptist University - Dallas, Texas.jpeg';
+import  us3 from '../assets/UNITED STATES/Drury University Springfield, Missouri.webp';
+import  us4 from '../assets/UNITED STATES/Troy University - Troy, Alabama.webp';
+import  us5 from '../assets/UNITED STATES/Southeast Missouri State University - Cape Girardeau, Missouri.avif';
+import  us6 from '../assets/UNITED STATES/Wichita State University - Wichita, Kansas.webp';
+import  us7 from '../assets/UNITED STATES/University of California, Extension, Riverside (International Education Programs) - Riverside, California.jpeg';
+import  us8 from '../assets/UNITED STATES/ochester Institute of Technology (RIT) - Rochester, New York.jpg';
+import  us9 from '../assets/UNITED STATES/Liberty University - Lynchburg, Virginia.jpeg';
+import  en1 from '../assets/UK/Anglia Ruskin University and ARU Writtle - London, Cambridge.png';
+import  en2 from '../assets/UK/Robert Gordon University - Aberdeen, Scotland.jpeg';
+import  en3 from '../assets/UK/Birmingham City University - Birmingham, England.jpeg';
+import  en4 from '../assets/UK/University of Derby - Derby, England.jpg';
+import  en5 from '../assets/UK/University of Wolverhampton - Wolverhampton, England.avif';
+import  en6 from '../assets/UK/London South Bank University (LSBU) - London, England.jpg';
+import  en7 from '../assets/UK/University of Lincoln - Lincoln, England.jpeg';
+import  en8 from '../assets/UK/University of Stirling - Stirling, Scotland.png';
+import  en9 from '../assets/UK/University of Roehampton.webp';
+import  cn1 from '../assets/Canada/Vancouver Island University - Nanaimo, British Columbia.jpg';
+import  cn2 from '../assets/Canada/Thompson Rivers University (TRU) - Kamloops, British Columbia.jpg';
+import  cn3 from '../assets/Canada/University of the Fraser Valley - Abbotsford, British Columbia.jpg';
+import  cn4 from '../assets/Canada/Centennial College - Toronto, Ontario.jpeg';
+import  cn5 from '../assets/Canada/Okanagan College - Kelowna, British Columbia.jpeg';
+import  cn6 from '../assets/Canada/Capilano University - MSquare - Vancouver, British Columbia.jpg';
+import  cn7 from '../assets/Canada/Conestoga College - Kitchener, Ontario.jpg';
+import  cn8 from '../assets/Canada/George Brown College - Toronto, Ontario.jpeg';
+import  cn9 from '../assets/Canada/Cape Breton University (MSquare) - Sydney, Nova Scotia.jpeg';
+import  sz1 from '../assets/Switzerland/EU Business School - Geneva, Montreux.jpg';
+import  sz2 from '../assets/Switzerland/Business & Hotel Management School (BHMS) University Centre - Lucerne.jpg';
+import  sz3 from '../assets/Switzerland/Rushford Business School - Lucerne.jpg';
+import  sz4 from '../assets/Switzerland/Swiss Hotel Management School (SHMS) - Montreux, Leysin.jpg';
+import  sz5 from '../assets/Switzerland/César Ritz Colleges - Le Bouveret, Brig.jpg';
+import  sz6 from '../assets/Switzerland/HIM Business School - Montreux.jpg';
+import  sz7 from '../assets/Switzerland/Culinary Arts Academy - Le Bouveret.jpg';
+import  fr1 from '../assets/France/Le Cordon Bleu - Paris.jpg';
+import  fr2 from '../assets/France/Toulouse Business School - Toulouse, Paris.jpeg';
+import  fr3 from '../assets/France/New York Film Academy - Paris.jpg';
+import  fr4 from '../assets/France/Institut Superieur de Gestion (ISG) - Paris.jpg';
+import  fr5 from '../assets/France/Association Leonard De Vinci - Paris.jpg';
+import  fr6 from '../assets/France/Istituto Marangoni - Paris.jpg';
+import  fr8 from '../assets/France/ESC Clermont - Clermont-Ferrand.jpg';
+import nl1 from '../assets/Netherlands/TIO University of Applied Sciences - Utrecht.jpg';
+import nl2 from '../assets/Netherlands/Wittenborg University of Applied Sciences - Apeldoorn.jpg';
+import nl3 from '../assets/Netherlands/SRH Haarlem University of Applied Sciences - Haarlem.jpg';
+import nl4 from '../assets/Netherlands/IC University of Applied Sciences - Amsterdam.jpg';
+import nl5 from '../assets/Netherlands/Cambridge Education Group - CEG - OnCampus Amsterdam.jpg';
+import gy1 from '../assets/Germany/Steinbeis University - Schools of Next Practices - Stuttgart.jpg';
+import gy2 from '../assets/Germany/Arden University - Berlin.jpg';
+import gy3 from '../assets/Germany/European University OR EU Business School - Munich.jpg';
+import gy4 from '../assets/Germany/IU International University of Applied Sciences - Bad Honnef.jpg';
+import iy1 from '../assets/Italy/POLIMI Graduate School of Management - Milan.jpg';
+import iy2 from '../assets/Italy/International Education Partners (IEP Italy) - All across Italy.jpg';
+import iy3 from '../assets/Italy/New York Film Academy - Florence.jpeg';
+import ir1 from '../assets/IRELAND/Maynooth University - Maynooth.jpg';
+import ir2 from '../assets/IRELAND/University of Limerick - Limerick.webp';
+import ir3 from '../assets/IRELAND/University of Galway - Galway.jpg';
+import ir4 from '../assets/IRELAND/Shannon College of Hotel Management - Co. Clare.jpg';
+import ir5 from '../assets/IRELAND/National College of Ireland - Dublin.jpg';
+import ir6 from '../assets/IRELAND/Dublin Business School (DBS) - Dublin.jpg';
+import ir7 from '../assets/IRELAND/Dublin City University - Dublin.jpg';
 
 const universities = [
   {
     "name": "Northwest Missouri State University",
     "location": "Maryville, Missouri, USA",
-    "image": "https://example.com/northwestmissouri.jpg"
+    "image": us1
   },
   {
     "name": "Dallas Baptist University",
     "location": "Dallas, Texas, USA",
-    "image": "https://example.com/dallasbaptist.jpg"
+    "image": us2
   },
   {
     "name": "Drury University (Undergraduate Only)",
     "location": "Springfield, Missouri, USA",
-    "image": "https://example.com/drury.jpg"
+    "image": us3
   },
   {
     "name": "Troy University",
     "location": "Troy, Alabama, USA",
-    "image": "https://example.com/troy.jpg"
+    "image": us4
   },
   {
     "name": "Southeast Missouri State University",
     "location": "Cape Girardeau, Missouri, USA",
-    "image": "https://example.com/semo.jpg"
+    "image": us5
   },
   {
     "name": "Wichita State University",
     "location": "Wichita, Kansas, USA",
-    "image": "https://example.com/wichita.jpg"
+    "image": us6
   },
   {
     "name": "University of California, Extension, Riverside (International Education Programs)",
     "location": "Riverside, California, USA",
-    "image": "https://example.com/ucriverside.jpg"
+    "image": us7
   },
   {
     "name": "Rochester Institute of Technology (RIT)",
     "location": "Rochester, New York, USA",
-    "image": "https://example.com/rit.jpg"
+    "image": us8
   },
   {
     "name": "Liberty University",
     "location": "Lynchburg, Virginia, USA",
-    "image": "https://example.com/liberty.jpg"
+    "image": us9
   },
   {
     "name": "Anglia Ruskin University and ARU Writtle",
     "location": "London, Cambridge, England",
-    "image": "https://example.com/aruwrittle.jpg"
+    "image":en1
   },
   {
     "name": "Robert Gordon University",
     "location": "Aberdeen, Scotland",
-    "image": "https://example.com/robertgordon.jpg"
+    "image": en2
   },
   {
     "name": "Birmingham City University",
     "location": "Birmingham, England",
-    "image": "https://example.com/birminghamcity.jpg",
+    "image": en3,
     "note": "Applications Not accepted from Tamilnadu"
   },
   {
     "name": "University of Derby",
     "location": "Derby, England",
-    "image": "https://example.com/derby.jpg"
+    "image": en4
   },
   {
     "name": "University of Wolverhampton",
     "location": "Wolverhampton, England",
-    "image": "https://example.com/wolverhampton.jpg"
+    "image": en5
   },
   {
     "name": "London South Bank University (LSBU)",
     "location": "London, England",
-    "image": "https://example.com/lsbu.jpg"
+    "image": en6
   },
   {
     "name": "University of Lincoln",
     "location": "Lincoln, England",
-    "image": "https://example.com/lincoln.jpg"
+    "image": en7
   },
   {
     "name": "University of Stirling",
     "location": "Stirling, Scotland",
-    "image": "https://example.com/stirling.jpg",
+    "image": en8,
     "note": "Applications for UG Programs are not accepted from Punjab and Haryana"
   },
   {
     "name": "University of Roehampton (Through Oxford International Education Group - OIEG)",
     "location": "London, England",
-    "image": "https://example.com/roehampton.jpg"
+    "image": en9,
   },
   {
     "name": "Vancouver Island University",
     "location": "Nanaimo, British Columbia, Canada",
-    "image": "https://example.com/vancouverisland.jpg"
+    "image": cn1
   },
   {
     "name": "Thompson Rivers University (TRU)",
     "location": "Kamloops, British Columbia, Canada",
-    "image": "https://example.com/thompsonrivers.jpg"
+    "image": cn2,
   },
   {
     "name": "University of the Fraser Valley",
     "location": "Abbotsford, British Columbia, Canada",
-    "image": "https://example.com/fraservalley.jpg"
+    "image": cn3
   },
   {
     "name": "Centennial College",
     "location": "Toronto, Ontario, Canada",
-    "image": "https://example.com/centennial.jpg"
+    "image": cn4
   },
   {
     "name": "Okanagan College",
     "location": "Kelowna, British Columbia, Canada",
-    "image": "https://example.com/okanagan.jpg"
+    "image": cn5
   },
   {
     "name": "Capilano University - MSquare",
     "location": "Vancouver, British Columbia, Canada",
-    "image": "https://example.com/capilano.jpg"
+    "image": cn6
   },
   {
     "name": "Conestoga College",
     "location": "Kitchener, Ontario, Canada",
-    "image": "https://example.com/conestoga.jpg"
+    "image": cn7
   },
   {
     "name": "George Brown College",
     "location": "Toronto, Ontario, Canada",
-    "image": "https://example.com/georgebrown.jpg"
+    "image": cn8
   },
   {
     "name": "Cape Breton University (MSquare)",
     "location": "Sydney, Nova Scotia, Canada",
-    "image": "https://example.com/capebreton.jpg"
+    "image": cn9
   },
   {
     "name": "EU Business School",
     "location": "Geneva, Montreux, Switzerland",
-    "image": "https://example.com/eu_business_school.jpg"
+    "image": sz1
   },
   {
     "name": "Business & Hotel Management School (BHMS) University Centre, Switzerland",
     "location": "Lucerne, Switzerland",
-    "image": "https://example.com/bhms_university_centre.jpg"
+    "image": sz2
   },
   {
     "name": "Rushford Business School",
     "location": "Lucerne, Switzerland",
-    "image": "https://example.com/rushford_business_school.jpg"
+    "image": sz3
   },
   {
     "name": "Swiss Hotel Management School (SHMS)",
     "location": "Montreux, Leysin, Switzerland",
-    "image": "https://example.com/shms.jpg"
+    "image":sz4
   },
   {
     "name": "César Ritz Colleges",
     "location": "Le Bouveret, Brig, Switzerland",
-    "image": "https://example.com/cesar_ritz_colleges.jpg"
+    "image": sz5
   },
   {
     "name": "HIM Business School",
     "location": "Montreux, Switzerland",
-    "image": "https://example.com/him_business_school.jpg"
+    "image": sz6
   },
   {
     "name": "Culinary Arts Academy",
     "location": "Le Bouveret, Switzerland",
-    "image": "https://example.com/culinary_arts_academy.jpg"
+    "image": sz7,
   },
   {
     "name": "Le Cordon Bleu",
     "location": "Paris, France",
-    "image": "https://example.com/le_cordon_bleu.jpg"
+    "image": fr1
   },
   {
     "name": "Toulouse Business School",
     "location": "Toulouse, Paris, France",
-    "image": "https://example.com/toulouse_business_school.jpg"
+    "image": fr2
   },
   {
     "name": "New York Film Academy",
     "location": "Paris, France",
-    "image": "https://example.com/new_york_film_academy.jpg"
+    "image": fr3
   },
   {
     "name": "Institut Superieur de Gestion (ISG)",
     "location": "Paris, France",
-    "image": "https://example.com/isg.jpg"
+    "image": fr4
   },
   {
     "name": "Association Leonard De Vinci (ESILV Engineering School & EMLV Management School)",
     "location": "Paris, France",
-    "image": "https://example.com/association_leonard_de_vinci.jpg"
+    "image": fr5
   },
   {
     "name": "Istituto Marangoni",
     "location": "Paris, France",
-    "image": "https://example.com/istituto_marangoni.jpg"
+    "image": fr6
   },
-  {
-    "name": "University of Europe for Applied Sciences",
-    "location": "Paris, France",
-    "image": "https://example.com/university_of_europe_for_applied_sciences.jpg"
-  },
+  // {
+  //   "name": "University of Europe for Applied Sciences",
+  //   "location": "Paris, France",
+  //   "image": 
+  // },
   {
     "name": "ESC Clermont",
     "location": "Clermont-Ferrand, France",
-    "image": "https://example.com/esc_clermont.jpg"
+    "image": fr8
   },
   {
     "name": "TIO University of Applied Sciences (TIO Business School)",
     "location": "Utrecht, Netherlands",
-    "image": "https://example.com/tio_university.jpg"
+    "image": nl1
   },
   {
     "name": "Wittenborg University of Applied Sciences",
     "location": "Apeldoorn, Netherlands",
-    "image": "https://example.com/wittenborg_university.jpg"
+    "image": nl2
   },
   {
     "name": "SRH Haarlem University of Applied Sciences (Formerly Haarlem Campus, Institute for Higher Education)",
     "location": "Haarlem, Netherlands",
-    "image": "https://example.com/srh_haarlem_university.jpg"
+    "image": nl3
   },
   {
     "name": "IC University of Applied Sciences - Amsterdam (Through GUS)",
     "location": "Amsterdam, Netherlands",
-    "image": "https://example.com/ic_university_amsterdam.jpg"
+    "image": nl4
   },
-  {
-    "name": "EIT InnoEnergy",
-    "location": "All Locations",
-    "image": "https://example.com/eit_innoenergy.jpg"
-  },
+  // {
+  //   "name": "EIT InnoEnergy",
+  //   "location": "All Locations",
+  //   "image": "https://example.com/eit_innoenergy.jpg"
+  // },
   {
     "name": "Cambridge Education Group - CEG - OnCampus Amsterdam",
     "location": "Amsterdam, Netherlands",
-    "image": "https://example.com/ceg_oncampus_amsterdam.jpg"
+    "image": nl5
   },
   {
     "name": "Steinbeis University - Schools of Next Practices",
     "location": "Stuttgart, Germany",
-    "image": "https://example.com/steinbeis_university.jpg"
+    "image": gy1
   },
   {
     "name": "Arden University",
     "location": "Berlin, Germany",
-    "image": "https://example.com/arden_university.jpg"
+    "image": gy2
   },
   {
     "name": "European University / EU Business School",
     "location": "Munich, Germany",
-    "image": "https://example.com/eu_business_school_munich.jpg"
+    "image": gy3
   },
   {
     "name": "IU International University of Applied Sciences (Formerly IUBH, Internationale Hochschule Bad Honnef)",
     "location": "Bad Honnef, Germany",
-    "image": "https://example.com/iu_international_university.jpg"
+    "image": gy4
   },
   {
     "name": "POLIMI Graduate School of Management (Also Known as MIP Politecnico di Milano)",
     "location": "Milan, Italy",
-    "image": "https://example.com/polimi_graduate_school.jpg"
+    "image": iy1
   },
   {
     "name": "International Education Partners (IEP Italy)",
     "location": "All across Italy",
-    "image": "https://example.com/iep_italy.jpg"
+    "image": iy2
   },
   {
     "name": "New York Film Academy",
     "location": "Florence, Italy",
-    "image": "https://example.com/new_york_film_academy_florence.jpg"
+    "image": iy3
   },
-  {
-    "name": "Istituto Superiore di Design, Napoli",
-    "location": "Napoli, Italy",
-    "image": "https://example.com/istituto_superiore_di_design_napoli.jpg"
-  },
+  // {
+  //   "name": "Istituto Superiore di Design, Napoli",
+  //   "location": "Napoli, Italy",
+  //   "image": "https://example.com/istituto_superiore_di_design_napoli.jpg"
+  // },
   {
     "name": "Maynooth University",
     "location": "Maynooth, Ireland",
-    "image": "https://example.com/maynooth_university.jpg"
+    "image": ir1
   },
   {
     "name": "University of Limerick",
     "location": "Limerick, Ireland",
-    "image": "https://example.com/university_of_limerick.jpg"
+    "image": ir2
   },
   {
     "name": "University of Galway",
     "previous_name": "National University of Ireland, Galway (NUI Galway)",
     "location": "Galway, Ireland",
-    "image": "https://example.com/university_of_galway.jpg"
+    "image": ir3
   },
   {
     "name": "Shannon College of Hotel Management",
     "location": "Co. Clare, Ireland",
-    "image": "https://example.com/shannon_college.jpg"
+    "image": ir4
   },
   {
     "name": "National College of Ireland",
     "location": "Dublin, Ireland",
-    "image": "https://example.com/national_college_of_ireland.jpg"
+    "image": ir5
   },
   {
     "name": "Dublin Business School (DBS)",
     "location": "Dublin, Ireland",
     "note": "No commission for applications from Punjab, Haryana, Gujarat, Andhra Pradesh, Telangana, and Rajasthan (W.e.f. November 2023)",
-    "image": "https://example.com/dublin_business_school.jpg"
+    "image": ir6
   },
   {
     "name": "Dublin City University",
     "location": "Dublin, Ireland",
-    "image": "https://example.com/dublin_city_university.jpg"
+    "image": ir7
   }
 ];
 
