@@ -5,9 +5,27 @@
     <title>BASIC CONSULTANTS</title>
     <link rel="icon" type="image/png" href="./src/assets/Basic.png"  width="40px" height=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Initial background */
+      body {
+        transition: background-color 1s ease-in-out;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      const colors = ["#2196f3", "#00008b"];
+      let index = 0;
+  
+      function changeBackgroundColor() {
+        document.body.style.backgroundColor = colors[index];
+        index = (index + 1) % colors.length;
+      }
+  
+      setInterval(changeBackgroundColor, 3000); // Change color every 3 seconds
+    </script>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
