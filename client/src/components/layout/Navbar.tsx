@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Globe, GraduationCap, Phone } from 'lucide-react'
+import { Menu, X, Globe, GraduationCap, Phone,File,Blocks,Settings } from 'lucide-react'
 import Basic from "../../assets/Basic.png";
 
 export function Navbar() {
@@ -17,16 +17,16 @@ export function Navbar() {
     { 
       path: '/basic', 
       label: 'Services',
-      icon: Globe,
+      icon: Settings,
       subItems: [
         // { path: '/services/profile-evaluation', label: 'Profile Evaluation' },
         // { path: '/services/career-counseling', label: 'Career Counseling' },
         // { path: '/services/university-selection', label: 'University Selection' },
       ]
     },
-    { path: '/resume', label: 'Resume', icon: GraduationCap },
+    { path: '/resume', label: 'Resume', icon: File },
     { path: '/universities', label: 'Universities', icon: GraduationCap },
-    { path: '/blogs', label: 'Blogs', icon: GraduationCap },
+    { path: '/blogs', label: 'Blogs', icon: Blocks },
     { path: '/contact', label: 'Contact', icon: Phone },
   ]
 

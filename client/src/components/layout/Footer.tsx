@@ -13,7 +13,7 @@ const quickLinks = [
   { name: "Services", href: "/services" },
   { name: "Universities", href: "/universities" },
   { name: "Contact", href: "/contact" },
-  { name: "Blog", href: "/blog" }
+  { name: "Blog", href: "/blogs" }
 ];
 
 export function Footer() {
