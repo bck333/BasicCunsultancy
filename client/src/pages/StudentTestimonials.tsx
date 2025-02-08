@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Instagram, Linkedin, Twitter } from 'lucide-react';
 import rohit from "../assets/rohit.png";
 import bhavani from "../assets/b.png";
+import r from "../assets/r.png";
+import g from "../assets/g.png";
+import k from "../assets/k.png";
 
 const StudentTestimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,6 +34,42 @@ const StudentTestimonials = () => {
       },
       image: bhavani
     },
+    {
+      id: 3,
+      name: "Roja reddy",
+      message: "Basic Consultancy helped my friend a lot with their master’s journey abroad. They guided them in choosing the right university and made the application and visa process easy. The team was always ready to answer questions and give the right advice. Their support made everything simple and stress-free. Thanks to their help, my friend could achieve their dream of studying abroad without any problems. I highly recommend Basic Consultancy to anyone planning to study overseas.",
+      location: "Hyderabad, Telengana, India",
+      socialLinks: {
+        // instagram: "https://instagram.com/sarah_worldwide",
+        // linkedin: "https://linkedin.com/in/sarahmartinez",
+        // twitter: "https://twitter.com/sarah_study_abroad"
+      },
+      image: r
+    },
+    {
+      id: 4,
+      name: "Gaddam Giri",
+      message: "I am extremely satisfied with the services provided by Basic Consultancy. Their professionalism, expertise, and client-first approach truly stand out. A special thanks to Vinod Anna, whose guidance and unwavering support made the entire process smooth and hassle-free. His dedication and attention to detail are remarkable. I highly recommend Basic Consultancy to anyone seeking reliable and efficient services. Their commitment to delivering exceptional results is truly commendable!",
+      location: "Hyderabad, Telengana, India",
+      socialLinks: {
+        // instagram: "https://instagram.com/sarah_worldwide",
+        // linkedin: "https://linkedin.com/in/sarahmartinez",
+        // twitter: "https://twitter.com/sarah_study_abroad"
+      },
+      image: g
+    },
+    {
+      id: 5,
+      name: "kollu sudheer",
+      message: "Basic Consultancy is undoubtedly one of the best consultancies in Hyderabad for students aspiring to study abroad. Their team is professional, efficient, and dedicated to guiding students on the right path to secure their visas. I am extremely happy with their support and assistance throughout my study visa process. Special thanks to Vinod Anna and his team for their invaluable guidance, accurate information, and prompt communication, which were instrumental in making my dream of studying abroad a reality. Their attention to detail and commitment ensured a smooth and successful application process. I highly recommend Basic Co",
+      location: "Hyderabad, Telengana, India",
+      socialLinks: {
+        // instagram: "https://instagram.com/sarah_worldwide",
+        // linkedin: "https://linkedin.com/in/sarahmartinez",
+        // twitter: "https://twitter.com/sarah_study_abroad"
+      },
+      image: k
+    }
   ];
 
   const handlePrevious = () => {

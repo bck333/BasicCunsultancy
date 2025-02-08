@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
+  { icon: Facebook, href: "https://www.facebook.com/share/1A6DPMA7fN/", label: "Facebook" },
   // { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Instagram, href: "https://www.instagram.com/basic_consultants_india?utm_source=qr&igsh=MW4xZm5zcmpta3k2Mw==", label: "Instagram" },
   // { icon: Linkedin, href: "#", label: "LinkedIn" }
 ];
 

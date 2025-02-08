@@ -13,6 +13,16 @@ import {
 import { motion } from 'framer-motion';
 import rohit from "../assets/rohit.png";
 import bhavani from "../assets/b.png";
+import r from "../assets/r.png";
+import g from "../assets/g.png";
+import k from "../assets/k.png";
+
+import  us4 from '../assets/UNITED STATES/Troy University - Troy, Alabama.webp';
+import  en4 from '../assets/UK/University of Derby - Derby, England.jpg';
+import  cn3 from '../assets/Canada/University of the Fraser Valley - Abbotsford, British Columbia.jpg';
+import  sz1 from '../assets/Switzerland/EU Business School - Geneva, Montreux.jpg';
+import gy2 from '../assets/Germany/Arden University - Berlin.jpg';
+import ir2 from '../assets/IRELAND/University of Limerick - Limerick.webp';
 
 import StudentTestimonials from './StudentTestimonials'
 
@@ -23,46 +33,33 @@ const LandingPage: React.FC = () => {
 
   const universities = [
     {
-      name: "Harvard University",
-      location: "Cambridge, USA",
-      image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80",
-      programs: "150+ Programs",
-      students: "20,000+ Students"
+      "name": "Troy University",
+      "location": "Troy, Alabama, USA",
+      "image": us4
     },
     {
-      name: "Oxford University",
-      location: "Oxford, UK",
-      image: "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&fit=crop&q=80",
-      programs: "350+ Programs",
-      students: "25,000+ Students"
+      "name": "University of Derby",
+      "location": "Derby, England",
+      "image": en4
+    },     {
+      "name": "University of the Fraser Valley",
+      "location": "Abbotsford, British Columbia, Canada",
+      "image": cn3
     },
     {
-      name: "University of Toronto",
-      location: "Toronto, Canada",
-      image: "https://www.universitymagazine.ca/wp-content/uploads/2022/01/What-is-the-University-of-Toronto-Acceptance-Rate.jpg",
-      programs: "200+ Programs",
-      students: "30,000+ Students"
+      "name": "EU Business School",
+      "location": "Geneva, Montreux, Switzerland",
+      "image": sz1
     },
     {
-      name: "Massachusetts (MIT)",
-      location: "Cambridge, USA",
-      image: "https://transcode-v2.app.engoo.com/image/fetch/f_auto,c_lfill,w_300,dpr_3/https://assets.app.engoo.com/images/4VIHOdlGgMZdsXMm8NUYOK.jpeg",
-      programs: "120+ Programs",
-      students: "18,000+ Students"
+      "name": "Arden University",
+      "location": "Berlin, Germany",
+      "image": gy2
     },
     {
-      name: "University of Cambridge",
-      location: "Cambridge, UK",
-      image: "https://www.martinco.com/wp-content/uploads/2024/04/Untitled-design-32.jpg",
-      programs: "300+ Programs",
-      students: "23,000+ Students"
-    },
-    {
-      name: "California Institute of Technology",
-      location: "Pasadena, USA",
-      image: "https://univerlist.com/media/images/blog/Caltech.jpg",
-      programs: "100+ Programs",
-      students: "5,000+ Students"
+      "name": "University of Limerick",
+      "location": "Limerick, Ireland",
+      "image": ir2
     },
   ];
   const reviews = [
@@ -90,18 +87,42 @@ const LandingPage: React.FC = () => {
       },
       image: bhavani
     },
-    // {
-    //   id: 3,
-    //   name: "Sarah Martinez",
-    //   message: "Professional, caring, and incredibly knowledgeable. They found the perfect university program for my academic goals.",
-    //   location: "Studied in Sydney, Australia",
-    //   socialLinks: {
-    //     // instagram: "https://instagram.com/sarah_worldwide",
-    //     // linkedin: "https://linkedin.com/in/sarahmartinez",
-    //     // twitter: "https://twitter.com/sarah_study_abroad"
-    //   },
-    //   image: "/api/placeholder/200/200"
-    // }
+    {
+      id: 3,
+      name: "Roja reddy",
+      message: "Basic Consultancy helped my friend a lot with their master’s journey abroad. They guided them in choosing the right university and made the application and visa process easy. The team was always ready to answer questions and give the right advice. Their support made everything simple and stress-free. Thanks to their help, my friend could achieve their dream of studying abroad without any problems. I highly recommend Basic Consultancy to anyone planning to study overseas.",
+      location: "Hyderabad, Telengana,India",
+      socialLinks: {
+        // instagram: "https://instagram.com/sarah_worldwide",
+        // linkedin: "https://linkedin.com/in/sarahmartinez",
+        // twitter: "https://twitter.com/sarah_study_abroad"
+      },
+      image: r
+    },
+    {
+      id: 4,
+      name: "Gaddam Giri",
+      message: "I am extremely satisfied with the services provided by Basic Consultancy. Their professionalism, expertise, and client-first approach truly stand out. A special thanks to Vinod Anna, whose guidance and unwavering support made the entire process smooth and hassle-free. His dedication and attention to detail are remarkable. I highly recommend Basic Consultancy to anyone seeking reliable and efficient services. Their commitment to delivering exceptional results is truly commendable!",
+      location: "Hyderabad, Telengana,India",
+      socialLinks: {
+        // instagram: "https://instagram.com/sarah_worldwide",
+        // linkedin: "https://linkedin.com/in/sarahmartinez",
+        // twitter: "https://twitter.com/sarah_study_abroad"
+      },
+      image: g
+    },
+    {
+      id: 5,
+      name: "kollu sudheer",
+      message: "Basic Consultancy is undoubtedly one of the best consultancies in Hyderabad for students aspiring to study abroad. Their team is professional, efficient, and dedicated to guiding students on the right path to secure their visas. I am extremely happy with their support and assistance throughout my study visa process. Special thanks to Vinod Anna and his team for their invaluable guidance, accurate information, and prompt communication, which were instrumental in making my dream of studying abroad a reality. Their attention to detail and commitment ensured a smooth and successful application process. I highly recommend Basic Co",
+      location: "Hyderabad, Telengana,India",
+      socialLinks: {
+        // instagram: "https://instagram.com/sarah_worldwide",
+        // linkedin: "https://linkedin.com/in/sarahmartinez",
+        // twitter: "https://twitter.com/sarah_study_abroad"
+      },
+      image: k
+    }
   ];
 
   // Filter universities based on the search term

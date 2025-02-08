@@ -8,27 +8,28 @@ import { section } from 'framer-motion/client';
 const iconMap = {
   'AGENDA': BookOpen,
   'SERVICES PROVIDED BY BASIC CONSULTANTS': Briefcase,
-  'ZERO PROCESSING FEE': Coins,
-  'FREE EDUCATION IN EUROPE': Globe,
+  'ZERO PROCESSING FEES': Coins,
+  'BUDGET-FRIENDLY STUDY DESTINATIONS': Globe,
   'LOW BUDGET COUNTRIES': Coins,
-  'NO VISA INTERVIEW COUNTRIES': Plane,
-  'GOVERNMENT FUNDED SCHOLARSHIPS FOR ABROAD STUDIES': Award
+  'NO VISA INTERVIEW REQUIRED': Plane,
+  'FULLY FUNDED INTERNATIONAL SCHOLARSHIPS': Award,
+  'CENTRAL GOVERNMENT EDUCATION GRANTS':Award
 };
 
 const Basic = () => {
   const [activeTooltip, setActiveTooltip] = useState(null);
 
   const dashboardItems = [
-    { title: 'ZERO PROCESSING FEE', description: 'Processing fee waivers for select countries.' },
-    { title: 'FREE EDUCATION IN EUROPE', description: 'Access free education opportunities in Europe.' },
-    { title: 'LOW BUDGET COUNTRIES', description: 'Cost-effective study abroad options.' },
-    { title: 'NO VISA INTERVIEW COUNTRIES', description: 'Hassle-free visa processes.' },
-    { title: 'GOVERNMENT FUNDED SCHOLARSHIPS FOR ABROAD STUDIES', description: 'Fully funded scholarships exploration.' },
-    { title: 'CENTRAL GOVERNMENT SCHOLARSHIPS', description: 'Support for deserving students.' },
-  ];
+    { title: 'ZERO PROCESSING FEES', description: 'Enjoy waived processing fees for select countries.' },
+    { title: 'STUDY FOR FREE IN EUROPE', description: 'Discover tuition-free education opportunities across Europe.' },
+    { title: 'BUDGET-FRIENDLY STUDY DESTINATIONS', description: 'Affordable education options in European countries.' },
+    { title: 'NO VISA INTERVIEW REQUIRED', description: 'Simplified visa application with no interview hassle.' },
+    { title: 'FULLY FUNDED INTERNATIONAL SCHOLARSHIPS', description: 'Explore government-backed scholarships covering tuition and living costs.' },
+    { title: 'CENTRAL GOVERNMENT EDUCATION GRANTS', description: 'Financial aid opportunities for deserving students.' },
+];
 
   const tooltipContent = {
-    'ZERO PROCESSING FEE': [
+    'ZERO PROCESSING FEES': [
       {
         name: "USA",
         description: "World-class education with various scholarships and funding opportunities.",
@@ -90,7 +91,7 @@ const Basic = () => {
         }
       }
     ],
-    'FREE EDUCATION IN EUROPE': [
+    'STUDY FOR FREE IN EUROPE': [
       {
         name: "Germany",
         description: "Offers free or low-cost education at public universities for international students.",
@@ -165,7 +166,7 @@ const Basic = () => {
         }
       }
     ],
-    'LOW BUDGET COUNTRIES': [
+    'BUDGET-FRIENDLY STUDY DESTINATIONS': [
       {
         name: "Latvia",
         description: "Affordable tuition and living costs with diverse study programs.",
@@ -244,7 +245,7 @@ const Basic = () => {
         }
       }
     ],
-    'NO VISA INTERVIEW COUNTRIES': [
+    'NO VISA INTERVIEW REQUIRED': [
       {
         name: "Malta",
         description: "Simplified visa process and high-quality education in a beautiful environment.",
@@ -365,7 +366,7 @@ const Basic = () => {
     //   { name: "Austria", description: "Streamlined visa process and affordable education." },
     //   { name: "Canada", description: "Simplified visa process with a strong academic and cultural environment." }
     // ],
-    'GOVERNMENT FUNDED SCHOLARSHIPS FOR ABROAD STUDIES': [
+    'FULLY FUNDED INTERNATIONAL SCHOLARSHIPS': [
       {
         name: "Telangana Government",
         description: "Various scholarships for economically weaker sections."
@@ -391,7 +392,7 @@ const Basic = () => {
         description: "Eligibility: Economically disadvantaged students. Amount: Up to ₹20 lakh."
       }
     ],
-    'CENTRAL GOVERNMENT SCHOLARSHIPS': [
+    'CENTRAL GOVERNMENT EDUCATION GRANTS': [
       {
         name: "National Overseas Scholarship Scheme",
         description: "Eligibility: SC, ST, and OBC candidates for postgraduate studies. Amount: Up to ₹15 lakh for tuition and living expenses."
