@@ -8,10 +8,10 @@ import { section } from 'framer-motion/client';
 const iconMap = {
   'AGENDA': BookOpen,
   'SERVICES PROVIDED BY BASIC CONSULTANTS': Briefcase,
-  'STUDY FOR FREE IN COUNTRIES': Coins,
+  'ENJOY FOR FREE PROCESSING FEE FOR SELECT COUNTRIES': Coins,
   'BUDGET-FRIENDLY STUDY DESTINATIONS IN EUROPE': Globe,
   'LOW BUDGET COUNTRIES': Coins,
-  'NO VISA, NO INTERVIEW COUNTRIES': Plane,
+  'SIMPLIFIED VISA APPLICATION WITH NO INTERVIEW HASSLE': Plane,
   'FULLY FUNDED INTERNATIONAL SCHOLARSHIPS': Award,
   'CENTRAL GOVERNMENT EDUCATION GRANTS':Award
 };
@@ -20,16 +20,16 @@ const Basic = () => {
   const [activeTooltip, setActiveTooltip] = useState(null);
 
   const dashboardItems = [
-    { title: 'STUDY FOR FREE IN COUNTRIES', description: 'Enjoy waived processing fees for select countries.' },
+    { title: 'ENJOY FOR FREE PROCESSING FEE FOR SELECT COUNTRIES', description: 'Enjoy waived processing fees for select countries.' },
     { title: 'FREE EDUCATION IN EUROPE', description: 'Discover tuition-free education opportunities across Europe.' },
     { title: 'BUDGET-FRIENDLY STUDY DESTINATIONS IN EUROPE', description: 'Affordable education options in European countries.' },
-    { title: 'NO VISA, NO INTERVIEW COUNTRIES', description: 'Simplified visa application with no interview hassle.' },
+    { title: 'SIMPLIFIED VISA APPLICATION WITH NO INTERVIEW HASSLE', description: 'Simplified visa application with no interview hassle.' },
     { title: 'FULLY FUNDED INTERNATIONAL SCHOLARSHIPS', description: 'Explore government-backed scholarships covering tuition and living costs.' },
     { title: 'CENTRAL GOVERNMENT EDUCATION GRANTS', description: 'Financial aid opportunities for deserving students.' },
 ];
 
   const tooltipContent = {
-    'STUDY FOR FREE IN COUNTRIES': [
+    'ENJOY FOR FREE PROCESSING FEE FOR SELECT COUNTRIES': [
       {
         name: "USA",
         description: "World-class education with various scholarships and funding opportunities.",
@@ -245,7 +245,7 @@ const Basic = () => {
         }
       }
     ],
-    'NO VISA, NO INTERVIEW COUNTRIES': [
+    'SIMPLIFIED VISA APPLICATION WITH NO INTERVIEW HASSLE': [
       {
         name: "Malta",
         description: "Simplified visa process and high-quality education in a beautiful environment.",
@@ -259,7 +259,7 @@ const Basic = () => {
       },
       {
         name: "Ireland",
-        description: "NO VISA, NO INTERVIEW COUNTRIES, with strong post-study work opportunities.",
+        description: "SIMPLIFIED VISA APPLICATION WITH NO INTERVIEW HASSLE, with strong post-study work opportunities.",
         eligibility: {
           bachelors: "12th pass and any English exam (IELTS 6, PTE 58, Duolingo 110, TOEFL 78).",
           masters: "Bachelor's degree (55%) and any English exam.",
@@ -358,7 +358,7 @@ const Basic = () => {
     // ],
     // 'NO VISA INTERVIEW COUNTRIES': [
     //   { name: "Malta", description: "Simplified visa process and high-quality education in a beautiful environment." },
-    //   { name: "Ireland", description: "NO VISA, NO INTERVIEW COUNTRIES, with strong post-study work opportunities." },
+    //   { name: "Ireland", description: "SIMPLIFIED VISA APPLICATION WITH NO INTERVIEW HASSLE, with strong post-study work opportunities." },
     //   { name: "Italy", description: "Streamlined visa process and affordable tuition for international students." },
     //   { name: "Sweden", description: "No visa interview and access to high-quality academic programs." },
     //   { name: "Luxembourg", description: "Simplified visa requirements and multilingual study options." },
