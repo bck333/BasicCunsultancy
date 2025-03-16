@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Info, X, BookOpen, ArrowRight, Briefcase, Globe, Coins, Plane, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { section } from 'framer-motion/client';
 
 
 const iconMap = {
@@ -23,8 +22,10 @@ const Basic = () => {
     { title: 'ENJOY FOR FREE PROCESSING FEE FOR SELECT COUNTRIES', description: 'Enjoy waived processing fees for select countries.' },
     { title: 'FREE EDUCATION IN EUROPE', description: 'Discover tuition-free education opportunities across Europe.' },
     { title: 'BUDGET-FRIENDLY STUDY DESTINATIONS IN EUROPE', description: 'Affordable education options in European countries.' },
-    { title: 'SIMPLIFIED VISA APPLICATION WITH NO INTERVIEW HASSLE', description: 'Simplified visa application with no interview hassle.' },
-    { title: 'FULLY FUNDED INTERNATIONAL SCHOLARSHIPS', description: 'Explore government-backed scholarships covering tuition and living costs.' },
+{ 
+  "title": "SIMPLIFIED VISA APPLICATION WITH NO INTERVIEW HASSLE", 
+  "description": "Apply for your visa easily without the hassle of an interview." 
+},    { title: 'FULLY FUNDED INTERNATIONAL SCHOLARSHIPS', description: 'Explore government-backed scholarships covering tuition and living costs.' },
     { title: 'CENTRAL GOVERNMENT EDUCATION GRANTS', description: 'Financial aid opportunities for deserving students.' },
 ];
 
